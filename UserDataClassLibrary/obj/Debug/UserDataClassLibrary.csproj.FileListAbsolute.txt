@@ -4,3 +4,9 @@ C:\Users\wjddn\source\repos\MovieReservation\UserDataClassLibrary\obj\Debug\User
 C:\Users\wjddn\source\repos\MovieReservation\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\wjddn\source\repos\MovieReservation\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.dll
 C:\Users\wjddn\source\repos\MovieReservation\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.pdb
+C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\bin\Debug\UserDataClassLibrary.dll
+C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\bin\Debug\UserDataClassLibrary.pdb
+C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.AssemblyReference.cache
+C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.dll
+C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.pdb

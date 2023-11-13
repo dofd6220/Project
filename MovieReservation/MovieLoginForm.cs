@@ -21,7 +21,7 @@ namespace MovieReservation
             LoginBtn.Click += LoginBtn_Click;
             RegisterBtn.Click += RegisterBtn_Click;
         }
-
+        
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             String ID = IDtxt.Text;
