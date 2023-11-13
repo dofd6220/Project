@@ -21,6 +21,7 @@ namespace MovieReservation
 
             /*Application.Run(new MovieLoginForm(userList));*/
             Application.Run(new MovieTicketingForm(userList));
+            // git 테스트
         }
     }
 }
