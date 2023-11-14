@@ -205,7 +205,74 @@ namespace MovieReservation
                 // 라디오버튼이 선택되었을 때 label에 텍스트를 설정합니다.
                 hourstxt.Text = selectedRadioButton.Text;
             }
-            if(selectedRadioButton == radioButton7 ||  selectedRadioButton == radioButton8)
+
+            // 라디오 버튼 7~8이 체크되었을 때
+            if (selectedRadioButton == radioButton1)
+            {
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+                radioButton5.Checked = false;
+                radioButton6.Checked = false;
+                radioButton7.Checked = false;
+                radioButton8.Checked = false;
+
+            }
+            if (selectedRadioButton == radioButton2)
+            {
+                radioButton1.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+                radioButton5.Checked = false;
+                radioButton6.Checked = false;
+                radioButton7.Checked = false;
+                radioButton8.Checked = false;
+
+            }
+            if (selectedRadioButton == radioButton3)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton4.Checked = false;
+                radioButton5.Checked = false;
+                radioButton6.Checked = false;
+                radioButton7.Checked = false;
+                radioButton8.Checked = false;
+
+            }
+            if (selectedRadioButton == radioButton4)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton5.Checked = false;
+                radioButton6.Checked = false;
+                radioButton7.Checked = false;
+                radioButton8.Checked = false;
+
+            }
+            if (selectedRadioButton == radioButton5)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+                radioButton6.Checked = false;
+                radioButton7.Checked = false;
+                radioButton8.Checked = false;
+
+            }
+            if (selectedRadioButton == radioButton6)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+                radioButton5.Checked = false;
+                radioButton7.Checked = false;
+                radioButton8.Checked = false;
+            }
+            if (selectedRadioButton == radioButton7)
             {
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
@@ -213,11 +280,19 @@ namespace MovieReservation
                 radioButton4.Checked = false;
                 radioButton5.Checked = false;
                 radioButton6.Checked = false;
-            }
-            else if(selectedRadioButton == radioButton1 || selectedRadioButton == radioButton2 || selectedRadioButton == radioButton3 || selectedRadioButton == radioButton4 || selectedRadioButton == radioButton5 || selectedRadioButton == radioButton6)
-            {
-                radioButton7.Checked = false;
                 radioButton8.Checked = false;
+
+            }
+            if (selectedRadioButton == radioButton8)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+                radioButton4.Checked = false;
+                radioButton5.Checked = false;
+                radioButton6.Checked = false;
+                radioButton7.Checked = false;
+
             }
         }
     }
