@@ -173,9 +173,9 @@ namespace MovieReservation
 
                 // 선택한 항목으로 텍스트 대입
                 theatertxt.Text = selectedItem;
-            }           
-
+            }
         }
+
         private void listBox4_MouseClick(object sender, MouseEventArgs e)
         {
             int selectedIndex = -1;
@@ -206,94 +206,27 @@ namespace MovieReservation
                 hourstxt.Text = selectedRadioButton.Text;
             }
 
-            // 라디오 버튼 7~8이 체크되었을 때
-            if (selectedRadioButton == radioButton1)
+            if ((radioButton1.Checked || radioButton2.Checked ||
+                 radioButton3.Checked || radioButton4.Checked ||
+                 radioButton5.Checked || radioButton6.Checked) &&
+                (radioButton7.Checked || radioButton8.Checked))
             {
-                radioButton2.Checked = false;
-                radioButton3.Checked = false;
-                radioButton4.Checked = false;
-                radioButton5.Checked = false;
-                radioButton6.Checked = false;
-                radioButton7.Checked = false;
-                radioButton8.Checked = false;
-
-            }
-            if (selectedRadioButton == radioButton2)
-            {
-                radioButton1.Checked = false;
-                radioButton3.Checked = false;
-                radioButton4.Checked = false;
-                radioButton5.Checked = false;
-                radioButton6.Checked = false;
-                radioButton7.Checked = false;
-                radioButton8.Checked = false;
-
-            }
-            if (selectedRadioButton == radioButton3)
-            {
-                radioButton1.Checked = false;
-                radioButton2.Checked = false;
-                radioButton4.Checked = false;
-                radioButton5.Checked = false;
-                radioButton6.Checked = false;
-                radioButton7.Checked = false;
-                radioButton8.Checked = false;
-
-            }
-            if (selectedRadioButton == radioButton4)
-            {
-                radioButton1.Checked = false;
-                radioButton2.Checked = false;
-                radioButton3.Checked = false;
-                radioButton5.Checked = false;
-                radioButton6.Checked = false;
-                radioButton7.Checked = false;
-                radioButton8.Checked = false;
-
-            }
-            if (selectedRadioButton == radioButton5)
-            {
-                radioButton1.Checked = false;
-                radioButton2.Checked = false;
-                radioButton3.Checked = false;
-                radioButton4.Checked = false;
-                radioButton6.Checked = false;
-                radioButton7.Checked = false;
-                radioButton8.Checked = false;
-
-            }
-            if (selectedRadioButton == radioButton6)
-            {
-                radioButton1.Checked = false;
-                radioButton2.Checked = false;
-                radioButton3.Checked = false;
-                radioButton4.Checked = false;
-                radioButton5.Checked = false;
-                radioButton7.Checked = false;
-                radioButton8.Checked = false;
-            }
-            if (selectedRadioButton == radioButton7)
-            {
+                // Uncheck radio buttons 1 to 6 if any of them are checked
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
                 radioButton3.Checked = false;
                 radioButton4.Checked = false;
                 radioButton5.Checked = false;
                 radioButton6.Checked = false;
+
+                // Uncheck radio buttons 7 and 8 if any of them are checked
+                radioButton7.Checked = false;
                 radioButton8.Checked = false;
 
-            }
-            if (selectedRadioButton == radioButton8)
-            {
-                radioButton1.Checked = false;
-                radioButton2.Checked = false;
-                radioButton3.Checked = false;
-                radioButton4.Checked = false;
-                radioButton5.Checked = false;
-                radioButton6.Checked = false;
-                radioButton7.Checked = false;
-
+                // Check the currently selected radio button
+                selectedRadioButton.Checked = true;
             }
         }
+
     }
 }
