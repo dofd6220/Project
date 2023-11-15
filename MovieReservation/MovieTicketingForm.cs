@@ -5,7 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UserDataClassLibrary;
@@ -72,6 +74,7 @@ namespace MovieReservation
             {
                 // 선택된 항목 저장
                 string selectedItem = listBox1.Items[selectedIndex] as string;
+                // 선택한 영화 표지
                 LoadImageForMovie(selectedItem);
                 // 선택한 항목으로 텍스트 대입
                 titletxt.Text = selectedItem;
@@ -91,7 +94,8 @@ namespace MovieReservation
             {
                 // 선택된 항목 저장
                 string selectedItem = listBox2.Items[selectedIndex] as string;
-
+                // 선택한 영화 표지
+                LoadImageForMovie(selectedItem);
                 // 선택한 항목으로 텍스트 대입
                 titletxt.Text = selectedItem;
             }
@@ -230,21 +234,30 @@ namespace MovieReservation
         }
         private void LoadImageForMovie(string movieTitle)
         {
-            // 여기서 movieTitle에 따라 해당하는 이미지 파일을 가져오는 로직을 구현합니다.
-            // 이미지 파일의 경로를 적절히 수정하세요.
-            string imagePath = GetImagePathForMovie(movieTitle);
+            try
+            {
+                // 여기서 movieTitle에 따라 해당하는 이미지 파일을 가져오는 로직을 구현합니다.
+                // 이미지 파일의 경로를 적절히 수정하세요.
+                string imagePath = GetImagePathForMovie(movieTitle);
 
-            // PictureBox에 이미지 로드
-            if (!string.IsNullOrEmpty(imagePath))
-            {
-                pictureBox5.Image = Image.FromFile(imagePath);
+                // PictureBox에 이미지 로드
+                if (!string.IsNullOrEmpty(imagePath))
+                {
+                    pictureBox5.Image = Image.FromFile(imagePath);
+                }
+                else
+                {
+                    // 이미지가 없는 경우 PictureBox 초기화
+                    pictureBox5.Image = null;
+                }
             }
-            else
+            catch (FileNotFoundException)
             {
-                // 이미지가 없는 경우 PictureBox 초기화
                 pictureBox5.Image = null;
             }
+
         }
+
         private string GetImagePathForMovie(string movieTitle)
         {
             // 각 영화 제목에 대한 이미지 파일의 경로를 반환하는 로직을 구현합니다.
@@ -252,13 +265,29 @@ namespace MovieReservation
             // 이 부분을 실제 프로젝트에 맞게 수정하세요.
 
             // 예시 경로: "C:\MovieImages\"
-            string imageFolderPath = @"C:\Users\dofd\Downloads";
+            string imageName = "";
+            string imageFolderPath = @"C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\img\MovieCover";
 
             // 예시: 영화 제목에 공백을 제거하고 ".jpg" 확장자를 붙인다.
-            string imageName = movieTitle.Replace(" ", "") + ".jpg";
+            if (movieTitle.Contains(":"))
+            {
+                imageName = SanitizeMovieTitle(movieTitle) + ".jpg";
+            }
+            else
+            {
+                imageName = movieTitle.Replace(" ", "") + ".jpg";
+            }
 
             // 이미지 파일의 전체 경로 반환
             return Path.Combine(imageFolderPath, imageName);
         }
+        static string SanitizeMovieTitle(string title)
+        {
+            // 특수 문자 및 공백을 제거하고 언더스코어로 대체
+            string sanitizedTitle = Regex.Replace(title, "[^a-zA-Z0-9]", "_");
+
+            return sanitizedTitle;
+        }
+
     }
 }

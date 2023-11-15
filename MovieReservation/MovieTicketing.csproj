@@ -106,5 +106,10 @@
       <Name>UserDataClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\MovieCover\그대들은어떻게살것인가.jpg" />
+    <Content Include="img\MovieCover\더마블스.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

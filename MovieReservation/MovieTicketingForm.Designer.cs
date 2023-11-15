@@ -68,6 +68,7 @@ namespace MovieReservation
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.titletxt = new System.Windows.Forms.Label();
             this.hourstxt = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -77,7 +78,6 @@ namespace MovieReservation
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Titlelb = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -547,8 +547,16 @@ namespace MovieReservation
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 402);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(799, 100);
+            this.panel6.Size = new System.Drawing.Size(799, 121);
             this.panel6.TabIndex = 3;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(8, 9);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(74, 104);
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
             // 
             // titletxt
             // 
@@ -631,19 +639,11 @@ namespace MovieReservation
             this.Titlelb.TabIndex = 0;
             this.Titlelb.Text = "영화 제목";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(8, 9);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(94, 82);
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
-            // 
             // MovieTicketingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 502);
+            this.ClientSize = new System.Drawing.Size(799, 523);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
