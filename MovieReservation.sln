@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTicketing", "MovieRese
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDataClassLibrary", "UserDataClassLibrary\UserDataClassLibrary.csproj", "{46C39F30-2DC0-4CF3-AE96-0497CEF4899C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MovieImages", "MovieImages", "{23108546-DFB0-4706-B48F-45BE8CFED4C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

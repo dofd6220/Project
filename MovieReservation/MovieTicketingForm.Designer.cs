@@ -77,6 +77,7 @@ namespace MovieReservation
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Titlelb = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -94,6 +95,7 @@ namespace MovieReservation
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -532,6 +534,7 @@ namespace MovieReservation
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.titletxt);
             this.panel6.Controls.Add(this.hourstxt);
             this.panel6.Controls.Add(this.label13);
@@ -550,7 +553,7 @@ namespace MovieReservation
             // titletxt
             // 
             this.titletxt.AutoSize = true;
-            this.titletxt.Location = new System.Drawing.Point(96, 43);
+            this.titletxt.Location = new System.Drawing.Point(108, 43);
             this.titletxt.Name = "titletxt";
             this.titletxt.Size = new System.Drawing.Size(11, 12);
             this.titletxt.TabIndex = 12;
@@ -622,11 +625,19 @@ namespace MovieReservation
             // Titlelb
             // 
             this.Titlelb.AutoSize = true;
-            this.Titlelb.Location = new System.Drawing.Point(29, 43);
+            this.Titlelb.Location = new System.Drawing.Point(108, 18);
             this.Titlelb.Name = "Titlelb";
-            this.Titlelb.Size = new System.Drawing.Size(65, 12);
+            this.Titlelb.Size = new System.Drawing.Size(57, 12);
             this.Titlelb.TabIndex = 0;
-            this.Titlelb.Text = "영화 제목 :";
+            this.Titlelb.Text = "영화 제목";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(8, 9);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(94, 82);
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
             // 
             // MovieTicketingForm
             // 
@@ -666,6 +677,7 @@ namespace MovieReservation
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -719,5 +731,6 @@ namespace MovieReservation
         private FlowLayoutPanel flowLayoutPanel2;
         private RadioButton radioButton7;
         private RadioButton radioButton8;
+        private PictureBox pictureBox5;
     }
 }
