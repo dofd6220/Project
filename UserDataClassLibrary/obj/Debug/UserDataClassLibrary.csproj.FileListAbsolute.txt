@@ -16,3 +16,9 @@ C:\Users\user\Desktop\school\Project\UserDataClassLibrary\obj\Debug\UserDataClas
 C:\Users\user\Desktop\school\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\school\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.dll
 C:\Users\user\Desktop\school\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.pdb
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\UserDataClassLibrary\bin\Debug\UserDataClassLibrary.dll
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\UserDataClassLibrary\bin\Debug\UserDataClassLibrary.pdb
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.AssemblyReference.cache
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.dll
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.pdb

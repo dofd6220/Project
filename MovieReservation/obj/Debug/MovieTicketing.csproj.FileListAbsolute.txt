@@ -62,3 +62,19 @@ C:\Users\user\Desktop\school\Project\MovieReservation\obj\Debug\MovieTicketing.c
 C:\Users\user\Desktop\school\Project\MovieReservation\obj\Debug\MovieTicketing.csproj.CopyComplete
 C:\Users\user\Desktop\school\Project\MovieReservation\obj\Debug\MovieReservation.exe
 C:\Users\user\Desktop\school\Project\MovieReservation\obj\Debug\MovieReservation.pdb
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\bin\Debug\MovieReservation.exe.config
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\bin\Debug\MovieReservation.exe
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\bin\Debug\MovieReservation.pdb
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\bin\Debug\UserDataClassLibrary.dll
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\bin\Debug\UserDataClassLibrary.pdb
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieTicketing.csproj.AssemblyReference.cache
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.MovieLoginForm.resources
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.MovieRegisterForm.resources
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.MovieTicketingForm.resources
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.Properties.Resources.resources
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.SeatSelection.resources
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieTicketing.csproj.GenerateResource.cache
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieTicketing.csproj.CoreCompileInputs.cache
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieTicketing.csproj.CopyComplete
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.exe
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.pdb
