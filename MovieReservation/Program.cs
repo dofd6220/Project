@@ -20,7 +20,7 @@ namespace MovieReservation
             List<UserCredentials> userList = new List<UserCredentials>();
 
             /*Application.Run(new MovieLoginForm(userList));*/
-            Application.Run(new MovieTicketingForm(userList));
+            Application.Run(new SeatSelection(/*userList*/));
             // git 테스트
         }
     }

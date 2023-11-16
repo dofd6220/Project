@@ -39,6 +39,9 @@ namespace MovieReservation
 
             radioButton7.CheckedChanged += RadioButton_CheckedChanged;
             radioButton8.CheckedChanged += RadioButton_CheckedChanged;
+
+            Submitbtn.Click += Submitbtn_Click;
+
         }
         private void InitData()
         {
@@ -80,6 +83,7 @@ namespace MovieReservation
                 titletxt.Text = selectedItem;
             }
         }
+
         private void listBox2_MouseClick(object sender, MouseEventArgs e)
         {
             int selectedIndex = -1;
@@ -178,6 +182,14 @@ namespace MovieReservation
 
                 // 선택한 항목으로 텍스트 대입
                 theatertxt.Text = selectedItem;
+                if (theatertxt.Text == "명동역씨네...")
+                {
+                    theatertxt.Text = "명동역씨네라이브러리";
+                }
+                if (theatertxt.Text == "송도타임스...")
+                {
+                    theatertxt.Text = "송도타임스페이스";
+                }
             }
         }
 
@@ -232,6 +244,7 @@ namespace MovieReservation
                 selectedRadioButton.Checked = true;
             }
         }
+
         private void LoadImageForMovie(string movieTitle)
         {
             try
@@ -289,5 +302,11 @@ namespace MovieReservation
             return sanitizedTitle;
         }
 
+        private void Submitbtn_Click(object sender, EventArgs e)
+        {
+            SeatSelection frm = new SeatSelection();
+            this.Visible = false;
+            frm.Show();
+        }
     }
 }

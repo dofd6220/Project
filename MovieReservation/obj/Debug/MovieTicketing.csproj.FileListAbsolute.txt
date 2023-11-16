@@ -44,3 +44,4 @@ C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\obj\Debug\MovieT
 C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\obj\Debug\MovieTicketing.csproj.CopyComplete
 C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\obj\Debug\MovieReservation.exe
 C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\obj\Debug\MovieReservation.pdb
+C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\obj\Debug\MovieReservation.SeatSelection.resources

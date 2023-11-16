@@ -69,6 +69,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeatSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeatSelection.Designer.cs">
+      <DependentUpon>SeatSelection.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MovieLoginForm.resx">
       <DependentUpon>MovieLoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +93,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SeatSelection.resx">
+      <DependentUpon>SeatSelection.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,8 +116,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\MovieCover\30일.jpg" />
     <Content Include="img\MovieCover\그대들은어떻게살것인가.jpg" />
+    <Content Include="img\MovieCover\뉴노멀.jpg" />
     <Content Include="img\MovieCover\더마블스.jpg" />
+    <Content Include="img\MovieCover\소년들.jpg" />
+    <Content Include="img\MovieCover\스즈메의문단속.jpg" />
+    <Content Include="img\MovieCover\용감한시민.jpg" />
+    <Content Include="img\MovieCover\테일러스위프트디에라스투어.jpg" />
+    <Content Include="img\MovieCover\톡투미.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
