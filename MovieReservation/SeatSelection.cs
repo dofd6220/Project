@@ -14,6 +14,7 @@ namespace MovieReservation
     public partial class SeatSelection : Form
     {
         private List<UserCredentials> users;
+        private List<string> seats = new List<string>();
         public SeatSelection(List<UserCredentials> userList)
         {
             users = userList;
@@ -21,20 +22,30 @@ namespace MovieReservation
             A1btn.Click += A1btn_Click;
             A2btn.Click += A2btn_Click;
         }
+        private void UpdateSeatNumText()
+        {
+            seats.Sort();
+            SeatNumtxt.Text = string.Join(" ", seats);
+        }
+        
+        
+
+
         private void A1btn_Click(object sender, EventArgs e)
         {
             if(A1btn.BackColor != Color.Red)
             {
                 A1btn.BackColor = Color.Red;
                 A1btn.ForeColor = Color.White;
-                SeatNumtxt.Text += " A1";
+                seats.Add("A1");
             }
-            else
+            else    
             {
                 A1btn.BackColor = default;
                 A1btn.ForeColor = default;
-                SeatNumtxt.Text = "";
-            }    
+                seats.Remove("A1");
+            }
+            UpdateSeatNumText();
         }
         private void A2btn_Click(object sender, EventArgs e)
         {
@@ -42,14 +53,15 @@ namespace MovieReservation
             {
                 A2btn.BackColor = Color.Red;
                 A2btn.ForeColor = Color.White;
-                SeatNumtxt.Text += " A2";
+                seats.Add("A2");
             }
-            else
+            else 
             {
                 A2btn.BackColor = default;
                 A2btn.ForeColor = default;
-                SeatNumtxt.Text = "A2";
+                seats.Remove("A2");
             }
+            UpdateSeatNumText();
         }
     }
 }

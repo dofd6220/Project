@@ -278,7 +278,7 @@ namespace MovieReservation
 
             // 예시 경로: "C:\MovieImages\"
             string imageName = "";
-            string imageFolderPath = @"C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\img\MovieCover\";
+            string imageFolderPath = @"..\..\img\MovieCover\";
 
             // 예시: 영화 제목에 공백을 제거하고 ".jpg" 확장자를 붙인다.
             if (movieTitle.Contains(":"))

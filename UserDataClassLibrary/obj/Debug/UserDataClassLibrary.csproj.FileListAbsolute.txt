@@ -10,3 +10,9 @@ C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\obj\Debug\Us
 C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.dll
 C:\Users\dofd\Desktop\School\C#WinForm\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.pdb
+C:\Users\user\Desktop\school\Project\UserDataClassLibrary\bin\Debug\UserDataClassLibrary.dll
+C:\Users\user\Desktop\school\Project\UserDataClassLibrary\bin\Debug\UserDataClassLibrary.pdb
+C:\Users\user\Desktop\school\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\school\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\school\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.dll
+C:\Users\user\Desktop\school\Project\UserDataClassLibrary\obj\Debug\UserDataClassLibrary.pdb
