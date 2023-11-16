@@ -67,26 +67,27 @@
             this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.checkBox30 = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.A1btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.Titlelb = new System.Windows.Forms.Label();
-            this.Submitbtn = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.theatertxt = new System.Windows.Forms.Label();
-            this.datetxt = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.hourstxt = new System.Windows.Forms.Label();
-            this.titletxt = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.SeatNumtxt = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.titletxt = new System.Windows.Forms.Label();
+            this.hourstxt = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.datetxt = new System.Windows.Forms.Label();
+            this.theatertxt = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Submitbtn = new System.Windows.Forms.Button();
+            this.Titlelb = new System.Windows.Forms.Label();
+            this.A2btn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -196,7 +197,6 @@
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "2";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -236,7 +236,6 @@
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "일반   ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // checkBox7
             // 
@@ -513,6 +512,7 @@
             // 
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.A2btn);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.A1btn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -520,7 +520,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(835, 330);
             this.panel3.TabIndex = 1;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(243, 200);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(13, 12);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "A";
             // 
             // A1btn
             // 
@@ -560,18 +568,9 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "인원/좌석";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(243, 200);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(13, 12);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "A";
-            // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.SeatNumtxt);
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.label8);
@@ -591,112 +590,14 @@
             this.panel4.Size = new System.Drawing.Size(835, 121);
             this.panel4.TabIndex = 4;
             // 
-            // Titlelb
+            // SeatNumtxt
             // 
-            this.Titlelb.AutoSize = true;
-            this.Titlelb.Location = new System.Drawing.Point(108, 18);
-            this.Titlelb.Name = "Titlelb";
-            this.Titlelb.Size = new System.Drawing.Size(57, 12);
-            this.Titlelb.TabIndex = 0;
-            this.Titlelb.Text = "영화 제목";
-            // 
-            // Submitbtn
-            // 
-            this.Submitbtn.Location = new System.Drawing.Point(684, 43);
-            this.Submitbtn.Name = "Submitbtn";
-            this.Submitbtn.Size = new System.Drawing.Size(75, 23);
-            this.Submitbtn.TabIndex = 1;
-            this.Submitbtn.Text = "선택";
-            this.Submitbtn.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(305, 18);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 12);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "극장";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(305, 44);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 12);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "날짜";
-            // 
-            // theatertxt
-            // 
-            this.theatertxt.AutoSize = true;
-            this.theatertxt.Location = new System.Drawing.Point(346, 18);
-            this.theatertxt.Name = "theatertxt";
-            this.theatertxt.Size = new System.Drawing.Size(11, 12);
-            this.theatertxt.TabIndex = 8;
-            this.theatertxt.Text = "-";
-            // 
-            // datetxt
-            // 
-            this.datetxt.AutoSize = true;
-            this.datetxt.Location = new System.Drawing.Point(346, 44);
-            this.datetxt.Name = "datetxt";
-            this.datetxt.Size = new System.Drawing.Size(11, 12);
-            this.datetxt.TabIndex = 9;
-            this.datetxt.Text = "-";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(305, 70);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 12);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "시간";
-            // 
-            // hourstxt
-            // 
-            this.hourstxt.AutoSize = true;
-            this.hourstxt.Location = new System.Drawing.Point(346, 70);
-            this.hourstxt.Name = "hourstxt";
-            this.hourstxt.Size = new System.Drawing.Size(11, 12);
-            this.hourstxt.TabIndex = 11;
-            this.hourstxt.Text = "-";
-            // 
-            // titletxt
-            // 
-            this.titletxt.AutoSize = true;
-            this.titletxt.Location = new System.Drawing.Point(108, 43);
-            this.titletxt.Name = "titletxt";
-            this.titletxt.Size = new System.Drawing.Size(11, 12);
-            this.titletxt.TabIndex = 12;
-            this.titletxt.Text = "-";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(8, 9);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(74, 104);
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(479, 18);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 12);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "좌석명";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(479, 43);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 12);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "좌석번호";
+            this.SeatNumtxt.AutoSize = true;
+            this.SeatNumtxt.Location = new System.Drawing.Point(538, 44);
+            this.SeatNumtxt.Name = "SeatNumtxt";
+            this.SeatNumtxt.Size = new System.Drawing.Size(11, 12);
+            this.SeatNumtxt.TabIndex = 17;
+            this.SeatNumtxt.Text = "-";
             // 
             // label14
             // 
@@ -707,14 +608,121 @@
             this.label14.TabIndex = 16;
             this.label14.Text = "-";
             // 
-            // label15
+            // label12
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(538, 44);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(11, 12);
-            this.label15.TabIndex = 17;
-            this.label15.Text = "-";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(479, 43);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(53, 12);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "좌석번호";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(479, 18);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 12);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "좌석명";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(8, 9);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(74, 104);
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            // 
+            // titletxt
+            // 
+            this.titletxt.AutoSize = true;
+            this.titletxt.Location = new System.Drawing.Point(108, 43);
+            this.titletxt.Name = "titletxt";
+            this.titletxt.Size = new System.Drawing.Size(11, 12);
+            this.titletxt.TabIndex = 12;
+            this.titletxt.Text = "-";
+            // 
+            // hourstxt
+            // 
+            this.hourstxt.AutoSize = true;
+            this.hourstxt.Location = new System.Drawing.Point(346, 70);
+            this.hourstxt.Name = "hourstxt";
+            this.hourstxt.Size = new System.Drawing.Size(11, 12);
+            this.hourstxt.TabIndex = 11;
+            this.hourstxt.Text = "-";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(305, 70);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(29, 12);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "시간";
+            // 
+            // datetxt
+            // 
+            this.datetxt.AutoSize = true;
+            this.datetxt.Location = new System.Drawing.Point(346, 44);
+            this.datetxt.Name = "datetxt";
+            this.datetxt.Size = new System.Drawing.Size(11, 12);
+            this.datetxt.TabIndex = 9;
+            this.datetxt.Text = "-";
+            // 
+            // theatertxt
+            // 
+            this.theatertxt.AutoSize = true;
+            this.theatertxt.Location = new System.Drawing.Point(346, 18);
+            this.theatertxt.Name = "theatertxt";
+            this.theatertxt.Size = new System.Drawing.Size(11, 12);
+            this.theatertxt.TabIndex = 8;
+            this.theatertxt.Text = "-";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(305, 44);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(29, 12);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "날짜";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(305, 18);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(29, 12);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "극장";
+            // 
+            // Submitbtn
+            // 
+            this.Submitbtn.Location = new System.Drawing.Point(684, 43);
+            this.Submitbtn.Name = "Submitbtn";
+            this.Submitbtn.Size = new System.Drawing.Size(75, 23);
+            this.Submitbtn.TabIndex = 1;
+            this.Submitbtn.Text = "선택";
+            this.Submitbtn.UseVisualStyleBackColor = true;
+            // 
+            // Titlelb
+            // 
+            this.Titlelb.AutoSize = true;
+            this.Titlelb.Location = new System.Drawing.Point(108, 18);
+            this.Titlelb.Name = "Titlelb";
+            this.Titlelb.Size = new System.Drawing.Size(57, 12);
+            this.Titlelb.TabIndex = 0;
+            this.Titlelb.Text = "영화 제목";
+            // 
+            // A2btn
+            // 
+            this.A2btn.Location = new System.Drawing.Point(294, 195);
+            this.A2btn.Name = "A2btn";
+            this.A2btn.Size = new System.Drawing.Size(27, 23);
+            this.A2btn.TabIndex = 18;
+            this.A2btn.Text = "2";
+            this.A2btn.UseVisualStyleBackColor = true;
             // 
             // SeatSelection
             // 
@@ -799,9 +807,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button Submitbtn;
         private System.Windows.Forms.Label Titlelb;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label SeatNumtxt;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button A2btn;
     }
 }

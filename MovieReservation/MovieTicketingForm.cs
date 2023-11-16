@@ -268,7 +268,6 @@ namespace MovieReservation
             {
                 pictureBox5.Image = null;
             }
-
         }
 
         private string GetImagePathForMovie(string movieTitle)
@@ -279,7 +278,7 @@ namespace MovieReservation
 
             // 예시 경로: "C:\MovieImages\"
             string imageName = "";
-            string imageFolderPath = @"C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\img\MovieCover";
+            string imageFolderPath = @"C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\img\MovieCover\";
 
             // 예시: 영화 제목에 공백을 제거하고 ".jpg" 확장자를 붙인다.
             if (movieTitle.Contains(":"))
@@ -304,7 +303,7 @@ namespace MovieReservation
 
         private void Submitbtn_Click(object sender, EventArgs e)
         {
-            SeatSelection frm = new SeatSelection();
+            SeatSelection frm = new SeatSelection(users);
             this.Visible = false;
             frm.Show();
         }
