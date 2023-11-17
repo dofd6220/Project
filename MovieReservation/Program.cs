@@ -17,11 +17,14 @@ namespace MovieReservation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             List<UserCredentials> userList = new List<UserCredentials>();
+            List<MovieCredentials> movieList = new List<MovieCredentials>();
 
             /*Application.Run(new MovieLoginForm(userList));*/
-            Application.Run(new SeatSelection(userList));
+            Application.Run(new MovieLoginForm(userList));
             // git 테스트
         }
     }
+
 }

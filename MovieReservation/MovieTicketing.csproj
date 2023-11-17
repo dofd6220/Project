@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +62,12 @@
     <Compile Include="MovieRegisterForm.Designer.cs">
       <DependentUpon>MovieRegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MovieReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieReservation.Designer.cs">
+      <DependentUpon>MovieReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="MovieTicketingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MovieRegisterForm.resx">
       <DependentUpon>MovieRegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieReservation.resx">
+      <DependentUpon>MovieReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovieTicketingForm.resx">
       <DependentUpon>MovieTicketingForm.cs</DependentUpon>

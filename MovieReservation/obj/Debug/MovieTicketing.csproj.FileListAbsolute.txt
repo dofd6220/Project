@@ -78,3 +78,4 @@ C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\Mo
 C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieTicketing.csproj.CopyComplete
 C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.exe
 C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.pdb
+C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.MovieReservation.resources

@@ -12,13 +12,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using UserDataClassLibrary;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MovieReservation
 {
     public partial class MovieTicketingForm : Form
     {
         private List<UserCredentials> users;
+        private List<MovieCredentials> movies;
         private UserCredentials currentUser;
+
+        private List<System.Windows.Forms.RadioButton> radioButtonGroup1;
+        private List<System.Windows.Forms.RadioButton> radioButtonGroup2;
+
         public MovieTicketingForm(List<UserCredentials> userList)
         {
             users = userList;
@@ -42,10 +48,19 @@ namespace MovieReservation
 
             Submitbtn.Click += Submitbtn_Click;
 
+            radioButtonGroup1 = new List<System.Windows.Forms.RadioButton>
+        {
+            radioButton1, radioButton2, radioButton3, radioButton4, radioButton5, radioButton6,
+        };
+
+            radioButtonGroup2 = new List<System.Windows.Forms.RadioButton>
+        {
+            radioButton7, radioButton8, 
+        };
         }
         private void InitData()
         {
-       
+            movies = new List<MovieCredentials>();
             string date = DateTime.Now.ToString("yyyy-MM-dd");
             DateTimetxt.Text = date;
 
@@ -221,27 +236,23 @@ namespace MovieReservation
             {
                 // 라디오버튼이 선택되었을 때 label에 텍스트를 설정합니다.
                 hourstxt.Text = selectedRadioButton.Text;
-            }
 
-            if ((radioButton1.Checked || radioButton2.Checked ||
-                 radioButton3.Checked || radioButton4.Checked ||
-                 radioButton5.Checked || radioButton6.Checked) &&
-                (radioButton7.Checked || radioButton8.Checked))
-            {
-                // Uncheck radio buttons 1 to 6 if any of them are checked
-                radioButton1.Checked = false;
-                radioButton2.Checked = false;
-                radioButton3.Checked = false;
-                radioButton4.Checked = false;
-                radioButton5.Checked = false;
-                radioButton6.Checked = false;
-
-                // Uncheck radio buttons 7 and 8 if any of them are checked
-                radioButton7.Checked = false;
-                radioButton8.Checked = false;
-
-                // Check the currently selected radio button
-                selectedRadioButton.Checked = true;
+                if (selectedRadioButton == radioButton7 || selectedRadioButton == radioButton8)
+                {
+                    // Uncheck radio1 to radio6 when radio7 or radio8 is checked
+                    radioButton1.Checked = false;
+                    radioButton2.Checked = false;
+                    radioButton3.Checked = false;
+                    radioButton4.Checked = false;
+                    radioButton5.Checked = false;
+                    radioButton6.Checked = false;
+                }
+                else if (radioButton7.Checked || radioButton8.Checked)
+                {
+                    // Uncheck radio7 and radio8 when radio1 to radio6 is checked
+                    radioButton7.Checked = false;
+                    radioButton8.Checked = false;
+                }
             }
         }
 
@@ -303,9 +314,38 @@ namespace MovieReservation
 
         private void Submitbtn_Click(object sender, EventArgs e)
         {
-            SeatSelection frm = new SeatSelection(users);
-            this.Visible = false;
-            frm.Show();
+            System.Windows.Forms.RadioButton selectedRadioButton = radioButtonGroup1.Concat(radioButtonGroup2).FirstOrDefault(rb => rb.Checked);
+
+            string movieTitle = titletxt.Text;
+            string theater = theatertxt.Text;
+            string date = datetxt.Text;
+            string hours = hourstxt.Text;
+            string movietime = selectedRadioButton?.Text;
+            string groupText = "";
+
+            if (selectedRadioButton != null)
+            {
+                // 라디오 버튼이 그룹1에 속하는지 확인
+                if (radioButtonGroup1.Contains(selectedRadioButton))
+                {
+                    // groupbox1의 text를 전송
+                    groupText = groupBox1.Text;
+                    // 처리 로직 추가
+                }
+                // 라디오 버튼이 그룹2에 속하는지 확인
+                else if (radioButtonGroup2.Contains(selectedRadioButton))
+                {
+                    // groupbox2의 text를 전송
+                    groupText = groupBox2.Text;
+                    // 처리 로직 추가
+                }
+
+                movies.Add(new MovieCredentials(movieTitle, theater, date, hours, movietime, groupText));
+
+                this.Visible = false;
+                SeatSelection frm = new SeatSelection(movies);
+                frm.Show();
+            }
         }
     }
 }
