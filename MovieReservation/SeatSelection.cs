@@ -110,6 +110,9 @@ namespace MovieReservation
             radioButton24.CheckedChanged += RadioButton_CheckedChanged;
             radioButton25.CheckedChanged += RadioButton_CheckedChanged;
 
+            //제출 버튼
+            Submitbtn.Click += Submitbtn_Click;
+
         }
         private void InitData()
         {
@@ -301,5 +304,23 @@ namespace MovieReservation
             return sanitizedTitle;
         }
 
+        private void Submitbtn_Click(object sender, EventArgs e)
+        {
+
+            string movieTitle = titletxt.Text;
+            string theater = theatertxt.Text;
+            string date = datetxt.Text;
+            string movietime = MovieTimetxt.Text;
+            string hours = hourstxt.Text;
+            string groupText = Lasertxt.Text;
+            string seat = SeatNumtxt.Text;
+
+            MessageBox.Show(seat);
+            movies.Add(new MovieCredentials( movieTitle,  theater,  date,  hours, movietime,  groupText,  seat));
+
+            this.Visible = false;
+            MovieReservation frm = new MovieReservation(movies);
+            frm.Show();
+            }
+        }
     }
-}

@@ -322,6 +322,7 @@ namespace MovieReservation
             string hours = hourstxt.Text;
             string movietime = selectedRadioButton?.Text;
             string groupText = "";
+            string seat = "";
 
             if (selectedRadioButton != null)
             {
@@ -340,7 +341,7 @@ namespace MovieReservation
                     // 처리 로직 추가
                 }
 
-                movies.Add(new MovieCredentials(movieTitle, theater, date, hours, movietime, groupText));
+                movies.Add(new MovieCredentials(movieTitle, theater, date, hours, movietime, groupText, seat));
 
                 this.Visible = false;
                 SeatSelection frm = new SeatSelection(movies);

@@ -31,14 +31,19 @@ namespace UserDataClassLibrary
         public string MovieTime { get; set; }
 
         public string GroupText { get; set; }
-        public MovieCredentials(string movieTitle, string theater, string date, string hourse, string movieTime, string groupText)
+
+        public string SeatText { get; set; }
+
+        public MovieCredentials(string movieTitle, string theater, string date, string hourse,
+            string movieTime, string groupText, string seat)
         {
             MovieTitle = movieTitle;
             Theater = theater;
             Date = date;
             Hourse = hourse;
-            MovieTime = movieTime;            GroupText = groupText;
-
+            MovieTime = movieTime;
+            GroupText = groupText;
+            SeatText = seat;
         }
     }
 }
