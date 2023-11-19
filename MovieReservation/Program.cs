@@ -22,7 +22,7 @@ namespace MovieReservation
             List<MovieCredentials> movieList = new List<MovieCredentials>();
 
             /*Application.Run(new MovieLoginForm(userList));*/
-            Application.Run(new MovieTicketingForm(userList));
+            Application.Run(new MovieLoginForm(userList));
             // git 테스트
         }
     }

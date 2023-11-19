@@ -57,7 +57,10 @@ namespace MovieReservation
         {
             radioButton7, radioButton8, 
         };
+
+            UserUpdate.Click += UserUpdate_Click;
         }
+
         private void InitData()
         {
             movies = new List<MovieCredentials>();
@@ -310,6 +313,13 @@ namespace MovieReservation
             string sanitizedTitle = Regex.Replace(title, "[^a-zA-Z0-9]", "_");
 
             return sanitizedTitle;
+        }
+        private void UserUpdate_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            MovieRegisterForm registerForm = new MovieRegisterForm(users);
+            registerForm.Show();
+
         }
 
         private void Submitbtn_Click(object sender, EventArgs e)
