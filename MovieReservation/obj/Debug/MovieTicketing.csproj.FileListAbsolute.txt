@@ -79,3 +79,4 @@ C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\Mo
 C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.exe
 C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.pdb
 C:\Users\wjddn\OneDrive\바탕 화면\home\Project\MovieReservation\obj\Debug\MovieReservation.MovieReservation.resources
+C:\Users\dofd\Desktop\School\C#WinForm\Project\MovieReservation\obj\Debug\MovieReservation.MovieReservation.resources

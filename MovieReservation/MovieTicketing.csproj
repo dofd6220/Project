@@ -135,6 +135,8 @@
     <Content Include="img\MovieCover\용감한시민.jpg" />
     <Content Include="img\MovieCover\테일러스위프트디에라스투어.jpg" />
     <Content Include="img\MovieCover\톡투미.jpg" />
+    <Content Include="img\MovieIcon\movie.png" />
+    <Content Include="img\MovieIcon\SpiderMan1.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

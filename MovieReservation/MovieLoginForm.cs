@@ -45,5 +45,10 @@ namespace MovieReservation
             MovieRegisterForm registerForm = new MovieRegisterForm(users);
             registerForm.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

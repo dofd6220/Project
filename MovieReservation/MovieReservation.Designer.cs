@@ -43,6 +43,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.MovieTimetxt = new System.Windows.Forms.Label();
             this.Hourstxt = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,27 +68,30 @@
             // Theatertxt
             // 
             this.Theatertxt.AutoSize = true;
+            this.Theatertxt.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Theatertxt.Location = new System.Drawing.Point(24, 73);
             this.Theatertxt.Name = "Theatertxt";
-            this.Theatertxt.Size = new System.Drawing.Size(31, 12);
+            this.Theatertxt.Size = new System.Drawing.Size(36, 15);
             this.Theatertxt.TabIndex = 2;
             this.Theatertxt.Text = "CGV";
             // 
             // Lasertxt
             // 
             this.Lasertxt.AutoSize = true;
+            this.Lasertxt.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Lasertxt.Location = new System.Drawing.Point(24, 40);
             this.Lasertxt.Name = "Lasertxt";
-            this.Lasertxt.Size = new System.Drawing.Size(19, 12);
+            this.Lasertxt.Size = new System.Drawing.Size(25, 15);
             this.Lasertxt.TabIndex = 1;
             this.Lasertxt.Text = "2D";
             // 
             // Movietxt
             // 
             this.Movietxt.AutoSize = true;
+            this.Movietxt.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Movietxt.Location = new System.Drawing.Point(24, 9);
             this.Movietxt.Name = "Movietxt";
-            this.Movietxt.Size = new System.Drawing.Size(57, 12);
+            this.Movietxt.Size = new System.Drawing.Size(72, 15);
             this.Movietxt.TabIndex = 0;
             this.Movietxt.Text = "영화 이름";
             // 
@@ -92,6 +99,10 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.SeatNum);
             this.panel2.Controls.Add(this.label13);
@@ -103,6 +114,7 @@
             this.panel2.Controls.Add(this.MovieTimetxt);
             this.panel2.Controls.Add(this.Hourstxt);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(550, 423);
@@ -123,45 +135,50 @@
             // SeatNum
             // 
             this.SeatNum.AutoSize = true;
-            this.SeatNum.Location = new System.Drawing.Point(24, 153);
+            this.SeatNum.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.SeatNum.Location = new System.Drawing.Point(29, 210);
             this.SeatNum.Name = "SeatNum";
-            this.SeatNum.Size = new System.Drawing.Size(53, 12);
+            this.SeatNum.Size = new System.Drawing.Size(76, 17);
             this.SeatNum.TabIndex = 10;
             this.SeatNum.Text = "좌석번호";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(24, 257);
+            this.label13.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label13.Location = new System.Drawing.Point(22, 365);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(217, 12);
+            this.label13.Size = new System.Drawing.Size(364, 20);
             this.label13.TabIndex = 9;
             this.label13.Text = "캡쳐화면은 입장이 제한될 수 있습니다.";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(24, 236);
+            this.label12.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label12.Location = new System.Drawing.Point(22, 341);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(275, 12);
+            this.label12.Size = new System.Drawing.Size(463, 20);
             this.label12.TabIndex = 8;
             this.label12.Text = "• 영화 상영시직시간 15분 전까지 취소가 기능하며";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 215);
+            this.label8.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8.Location = new System.Drawing.Point(22, 309);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(169, 12);
+            this.label8.Size = new System.Drawing.Size(286, 20);
             this.label8.TabIndex = 7;
             this.label8.Text = "본 영화는 10분 후 시작합니다.";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(24, 193);
+            this.label11.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label11.Location = new System.Drawing.Point(22, 287);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(267, 12);
+            this.label11.Size = new System.Drawing.Size(448, 20);
             this.label11.TabIndex = 6;
             this.label11.Text = "• 입장 지연에 따를 관람 불편을 최소화하기 위해";
             // 
@@ -176,29 +193,73 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 113);
+            this.label7.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7.Location = new System.Drawing.Point(29, 155);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 12);
+            this.label7.Size = new System.Drawing.Size(64, 17);
             this.label7.TabIndex = 2;
             this.label7.Text = "좌석 수";
             // 
             // MovieTimetxt
             // 
             this.MovieTimetxt.AutoSize = true;
-            this.MovieTimetxt.Location = new System.Drawing.Point(24, 71);
+            this.MovieTimetxt.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MovieTimetxt.Location = new System.Drawing.Point(160, 100);
             this.MovieTimetxt.Name = "MovieTimetxt";
-            this.MovieTimetxt.Size = new System.Drawing.Size(57, 12);
+            this.MovieTimetxt.Size = new System.Drawing.Size(81, 17);
             this.MovieTimetxt.TabIndex = 1;
             this.MovieTimetxt.Text = "상영 시간";
             // 
             // Hourstxt
             // 
             this.Hourstxt.AutoSize = true;
-            this.Hourstxt.Location = new System.Drawing.Point(24, 28);
+            this.Hourstxt.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Hourstxt.Location = new System.Drawing.Point(160, 45);
             this.Hourstxt.Name = "Hourstxt";
-            this.Hourstxt.Size = new System.Drawing.Size(85, 12);
+            this.Hourstxt.Size = new System.Drawing.Size(120, 17);
             this.Hourstxt.TabIndex = 0;
             this.Hourstxt.Text = "영화 예약 시간";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(29, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 17);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "영화 예약 시간";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(29, 100);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 17);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "상영 시간";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(160, 155);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "좌석 수";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Location = new System.Drawing.Point(160, 210);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 17);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "좌석번호";
             // 
             // MovieReservation
             // 
@@ -235,5 +296,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label SeatNum;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -63,14 +63,29 @@ namespace MovieReservation
 
         private void InitData()
         {
-            movies = new List<MovieCredentials>();
+            /*int count = userList.Count;
+            for (int i = 0; i < count; i++)
+            {
+                if (userList != null)
+                {
+                    IDtxt.Text = userList[i].UserId;
+                    PASStxt.Text = userList[i].UserPass;
+                    PASSextxt.Text = userList[i].UserPass;
+                    Nametxt.Text = userList[i].UserName;
+                }
+            }*/
+        movies = new List<MovieCredentials>();
             string date = DateTime.Now.ToString("yyyy-MM-dd");
             DateTimetxt.Text = date;
 
-            if (users.Count > 0)
+            int count = users.Count;
+            for (int i = 0; i < count; i++)
             {
-                currentUser = users[0];
-                Nametxt.Text = currentUser.UserName + "님 반갑습니다.";
+                if (count != null)
+                {
+                    currentUser = users[i];
+                    Nametxt.Text = currentUser.UserName + "님 반갑습니다.";
+                }
             }
 
             int totalDays = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
@@ -238,7 +253,7 @@ namespace MovieReservation
             if (selectedRadioButton.Checked)
             {
                 // 라디오버튼이 선택되었을 때 label에 텍스트를 설정합니다.
-                hourstxt.Text = selectedRadioButton.Text;
+                timetxt.Text = selectedRadioButton.Text;
 
                 if (selectedRadioButton == radioButton7 || selectedRadioButton == radioButton8)
                 {
@@ -329,7 +344,7 @@ namespace MovieReservation
             string movieTitle = titletxt.Text;
             string theater = theatertxt.Text;
             string date = datetxt.Text;
-            string hours = hourstxt.Text;
+            string hours = timetxt.Text;
             string movietime = selectedRadioButton?.Text;
             string groupText = "";
             string seat = "";

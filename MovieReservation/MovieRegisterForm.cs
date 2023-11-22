@@ -19,25 +19,23 @@ namespace MovieReservation
         public MovieRegisterForm(List<UserCredentials> users)
         {
             userList = users;
+
             InitializeComponent();
             UpdateData();
             Registerbtn.Click += Register_Btn;
         }
         private void UpdateData()
         {
-            if (userList != null && userList.Count > 0)
+            int count = userList.Count;
+            for (int i = 0; i < count; i++)
             {
-                IDtxt.Text = userList[0].UserId;
-                PASStxt.Text = userList[0].UserPass;
-                PASSextxt.Text = userList[0].UserPass;
-                Nametxt.Text = userList[0].UserName;
-            }
-            if (userList != null && userList.Count > 1)
-            {
-                IDtxt.Text = userList[1].UserId;
-                PASStxt.Text = userList[1].UserPass;
-                PASSextxt.Text = userList[1].UserPass;
-                Nametxt.Text = userList[1].UserName;
+                if(userList != null)
+                {
+                IDtxt.Text = userList[i].UserId;
+                PASStxt.Text = userList[i].UserPass;
+                PASSextxt.Text = userList[i].UserPass;
+                Nametxt.Text = userList[i].UserName;
+                }
             }
         }
         private void Register_Btn(object sender, EventArgs e)

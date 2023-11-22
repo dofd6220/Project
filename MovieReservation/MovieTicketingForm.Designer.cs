@@ -30,12 +30,11 @@ namespace MovieReservation
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.Logo = new System.Windows.Forms.Label();
             this.Welcomelb = new System.Windows.Forms.Label();
             this.Nametxt = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.UserUpdate = new System.Windows.Forms.Button();
-            this.LogOutbtn = new System.Windows.Forms.Button();
             this.DateTimetxt = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -72,12 +71,12 @@ namespace MovieReservation
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.titletxt = new System.Windows.Forms.Label();
-            this.hourstxt = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.timetxt = new System.Windows.Forms.Label();
+            this.timelb = new System.Windows.Forms.Label();
             this.datetxt = new System.Windows.Forms.Label();
             this.theatertxt = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.datelb = new System.Windows.Forms.Label();
+            this.theaterlb = new System.Windows.Forms.Label();
             this.Submitbtn = new System.Windows.Forms.Button();
             this.Titlelb = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -100,17 +99,17 @@ namespace MovieReservation
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // Logo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(351, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CLM";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Logo.AutoSize = true;
+            this.Logo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.Logo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Logo.Location = new System.Drawing.Point(351, 13);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(107, 46);
+            this.Logo.TabIndex = 0;
+            this.Logo.Text = "CLM";
+            this.Logo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Welcomelb
             // 
@@ -133,11 +132,10 @@ namespace MovieReservation
             // panel1
             // 
             this.panel1.Controls.Add(this.UserUpdate);
-            this.panel1.Controls.Add(this.LogOutbtn);
             this.panel1.Controls.Add(this.DateTimetxt);
             this.panel1.Controls.Add(this.Nametxt);
             this.panel1.Controls.Add(this.Welcomelb);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Logo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -152,15 +150,6 @@ namespace MovieReservation
             this.UserUpdate.TabIndex = 15;
             this.UserUpdate.Text = "회원 수정";
             this.UserUpdate.UseVisualStyleBackColor = true;
-            // 
-            // LogOutbtn
-            // 
-            this.LogOutbtn.Location = new System.Drawing.Point(706, 63);
-            this.LogOutbtn.Name = "LogOutbtn";
-            this.LogOutbtn.Size = new System.Drawing.Size(75, 23);
-            this.LogOutbtn.TabIndex = 14;
-            this.LogOutbtn.Text = "로그아웃";
-            this.LogOutbtn.UseVisualStyleBackColor = true;
             // 
             // DateTimetxt
             // 
@@ -560,12 +549,12 @@ namespace MovieReservation
             // 
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.titletxt);
-            this.panel6.Controls.Add(this.hourstxt);
-            this.panel6.Controls.Add(this.label13);
+            this.panel6.Controls.Add(this.timetxt);
+            this.panel6.Controls.Add(this.timelb);
             this.panel6.Controls.Add(this.datetxt);
             this.panel6.Controls.Add(this.theatertxt);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.datelb);
+            this.panel6.Controls.Add(this.theaterlb);
             this.panel6.Controls.Add(this.Submitbtn);
             this.panel6.Controls.Add(this.Titlelb);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -591,23 +580,23 @@ namespace MovieReservation
             this.titletxt.TabIndex = 12;
             this.titletxt.Text = "-";
             // 
-            // hourstxt
+            // timetxt
             // 
-            this.hourstxt.AutoSize = true;
-            this.hourstxt.Location = new System.Drawing.Point(346, 70);
-            this.hourstxt.Name = "hourstxt";
-            this.hourstxt.Size = new System.Drawing.Size(11, 12);
-            this.hourstxt.TabIndex = 11;
-            this.hourstxt.Text = "-";
+            this.timetxt.AutoSize = true;
+            this.timetxt.Location = new System.Drawing.Point(346, 70);
+            this.timetxt.Name = "timetxt";
+            this.timetxt.Size = new System.Drawing.Size(11, 12);
+            this.timetxt.TabIndex = 11;
+            this.timetxt.Text = "-";
             // 
-            // label13
+            // timelb
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(305, 70);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 12);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "시간";
+            this.timelb.AutoSize = true;
+            this.timelb.Location = new System.Drawing.Point(305, 70);
+            this.timelb.Name = "timelb";
+            this.timelb.Size = new System.Drawing.Size(29, 12);
+            this.timelb.TabIndex = 10;
+            this.timelb.Text = "시간";
             // 
             // datetxt
             // 
@@ -627,23 +616,23 @@ namespace MovieReservation
             this.theatertxt.TabIndex = 8;
             this.theatertxt.Text = "-";
             // 
-            // label10
+            // datelb
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(305, 44);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 12);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "날짜";
+            this.datelb.AutoSize = true;
+            this.datelb.Location = new System.Drawing.Point(305, 44);
+            this.datelb.Name = "datelb";
+            this.datelb.Size = new System.Drawing.Size(29, 12);
+            this.datelb.TabIndex = 7;
+            this.datelb.Text = "날짜";
             // 
-            // label9
+            // theaterlb
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(305, 18);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 12);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "극장";
+            this.theaterlb.AutoSize = true;
+            this.theaterlb.Location = new System.Drawing.Point(305, 18);
+            this.theaterlb.Name = "theaterlb";
+            this.theaterlb.Size = new System.Drawing.Size(29, 12);
+            this.theaterlb.TabIndex = 6;
+            this.theaterlb.Text = "극장";
             // 
             // Submitbtn
             // 
@@ -675,7 +664,7 @@ namespace MovieReservation
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "MovieTicketingForm";
-            this.Text = "`";
+            this.Text = "영화얘매프로그램";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -708,7 +697,7 @@ namespace MovieReservation
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Logo;
         private System.Windows.Forms.Label Welcomelb;
         private System.Windows.Forms.Label Nametxt;
         private System.Windows.Forms.Panel panel1;
@@ -734,11 +723,11 @@ namespace MovieReservation
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label theaterlb;
+        private System.Windows.Forms.Label datelb;
         private System.Windows.Forms.Label titletxt;
-        private System.Windows.Forms.Label hourstxt;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label timetxt;
+        private System.Windows.Forms.Label timelb;
         private System.Windows.Forms.Label datetxt;
         private System.Windows.Forms.Label theatertxt;
         private System.Windows.Forms.ListBox listBox4;
@@ -757,6 +746,5 @@ namespace MovieReservation
         private RadioButton radioButton8;
         private PictureBox pictureBox5;
         private Button UserUpdate;
-        private Button LogOutbtn;
     }
 }
